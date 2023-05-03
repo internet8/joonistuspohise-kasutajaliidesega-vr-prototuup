@@ -1,0 +1,2 @@
+# joonistuspohise-kasutajaliidesega-vr-prototuup
+Joonistuspõhise kasutajaliidesega virtuaalreaalsus prototüüp bakalaureusetöö jaoks.
