@@ -5,4 +5,4 @@
 <p>Sisaldab ka Windows Build'i, mida saab käivitada ilma Unity't paigaldamata. Sellekt tuleb avada kasutas "DoodleDetectionVR_Build" fail nimega "Playground.exe". Eelnevalt on vaja ühendada VR-prillid Oculus link abil Windows arvutiga. Vajab üsna võimekat arvutit. Kui prototüüp on avatud, tuleb testimisülesannete käivitamiseks vajutada klaviatuuril klahvi "tühik".</p>
 
 <h2>Prototüübi video</h2>
-[![Video](https://img.youtube.com/vi/EVWP5W4nR3E/0.jpg)](https://www.youtube.com/embed/EVWP5W4nR3E)
+[![Video](img.jpg)](https://www.youtube.com/embed/EVWP5W4nR3E)
