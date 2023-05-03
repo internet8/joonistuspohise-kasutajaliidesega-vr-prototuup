@@ -1,0 +1,21 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+struct Grass
+{
+    float3 position;
+    float4 color;
+};
+
+RWStructuredBuffer<Grass> grass;
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    float xPos = id.x;
+
+    Grass particle = grass[id.x];
+    particle.color = float4(xPos, 0.0, 0.0, 1.0);
+
+    grass[id.x] = particle;
+}

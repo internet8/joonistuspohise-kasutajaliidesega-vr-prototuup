@@ -1,0 +1,26 @@
+#pragma kernel CSMain
+
+struct Rat
+{
+    float3 position;
+    float3 rotation;
+    float3 velocity;
+    int evading;
+};
+
+RWStructuredBuffer<Rat> rats;
+float speed;
+float force;
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    Rat rat = rats[id.x];
+    rat.position.x += speed * 0.001;
+
+    rats[id.x] = rat;
+}
+
+float Random (float2 co) {
+    return(frac(sin(dot(co.xy, float2(12.9898, 78.233))) * 43758.5453)) * 1;
+}
